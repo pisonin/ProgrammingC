@@ -17,13 +17,10 @@ int main() {
     while (1) {
         c = getch(); 
         if (c == 'A') {  // エンターキーが押された場合
-            printf("保存された日付と時間: %04d年%02d月%02d日 %02d時%02d分%02d秒\n",
+            printf("保存された日付と時間: %04d年%02d月%02d日a\n",
                    saved_time.tm_year + 1900,
                    saved_time.tm_mon + 1,
-                   saved_time.tm_mday,
-                   saved_time.tm_hour,
-                   saved_time.tm_min,
-                   saved_time.tm_sec);
+                   saved_time.tm_mday);
             break;
         }
     }
